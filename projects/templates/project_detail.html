@@ -2,8 +2,9 @@
 {% load static %}
 
 {% block page_content %}
+<body>
 <h1>{{ project.title }}</h1>
-<div class="row">
+<div id="main">
     <div class="col-md-8">
         <img src="{% static project.image %}" alt="" width="100%">
     </div>
@@ -15,4 +16,6 @@
         <p>{{ project.technology }}</p>
     </div>
 </div>
+</body>
 {% endblock %}
+
